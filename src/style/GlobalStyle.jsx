@@ -23,6 +23,18 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    /* --- font --------------- */
+    @font-face {
+        font-family: 'Pretendard';
+        src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-style: normal;
+    }
+
+
+    * {
+        box-sizing: border-box;
+    }
+
     /* html {
         font-size: 62.5%;
     } */
