@@ -1,11 +1,11 @@
-import BasicButton from "./components/Button/BasicButton";
 import GlobalStyle from "./style/GlobalStyle";
+import { BasicButton } from "./components";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <BasicButton />
+      <BasicButton type="contained">Button</BasicButton>
     </>
   );
 }

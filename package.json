@@ -1,7 +1,7 @@
 {
-  "name": "design-system",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@kitsch-lib/components",
+  "version": "0.1.2",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,18 +11,24 @@
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.8",
     "styled-reset": "^4.5.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf dist && mkdir dist && babel src/components -d dist --copy-files"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -36,5 +42,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/preset-react": "^7.23.3"
+  },
+  "description": "부트스트랩, MUI를 참고하여 만든 나만의 디자인 시스템 입니다.",
+  "main": "dist/index.js",
+  "repository": "git+https://github.com/min-bok/Design-system.git",
+  "keywords": [
+    "design-system"
+  ],
+  "author": "hyeyeonglee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/min-bok/Design-system/issues"
   }
 }
