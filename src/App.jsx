@@ -1,11 +1,16 @@
 import GlobalStyle from "./style/GlobalStyle";
-import { BasicButton } from "./components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Inputs from "./page/Inputs";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <BasicButton type="contained">Button</BasicButton>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/input/*" element={<Inputs />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
