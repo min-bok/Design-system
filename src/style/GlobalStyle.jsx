@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
         border: none;
         font-family: "Pretendard";
         cursor: pointer;
+        box-sizing: border-box;
     }
 
 `;
