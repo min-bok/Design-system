@@ -1,6 +1,6 @@
 import GlobalStyle from "./style/GlobalStyle";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Inputs from "./page/Inputs";
+import { Inputs, Presentations } from "./page";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/input/*" element={<Inputs />} />
+          <Route path="/presentation/*" element={<Presentations />} />
         </Routes>
       </BrowserRouter>
     </>
